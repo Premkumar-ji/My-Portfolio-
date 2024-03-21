@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prem Kumar Modi</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+
+    VANTA.NET({
+      el: "#Space",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3f84ff,
+      backgroundColor: 0x22,
+      points: 20.00,
+      maxDistance: 19.00,
+      spacing: 17.00
+    })
+  })
+
+</script>
+
+<body>
+  <div id="Space"></div>
+  <div id="Home">
+    <div class="header">
+      <div class="name">
+        <img src="p.png" alt="">
+        <h2>rem</h2>
+
+      </div>
+      <div class="div2">
+        <table class="table1">
+          <tr class="tr1">
+            <td><a href="#Home">Home</a></td>
+            <td><a href="#education">Education</a></td>
+            <td><a href="#Skill">Skills</a></td>
+            <td><a href="#Contact">Contact</a> </td>
+          </tr>
+        </table>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <!-- footer section starts from here -->
+    <div class="footer">
+      <div class="part1">
+        <table>
+          <tr>
+            <h1>Hi I'm </h1>
+          </tr>
+          <tr>
+            <h2>Prem Kumar Modi</h2>
+          </tr>
+          <tr>
+            <p>I'm a <span id="auto-type"></span><span class="cut">|</span><br> from India.<br><br>I am pursuing my BCA
+              in
+              B.S City College.</p>
+          </tr>
+          <tr class="connect">
+            <td><a href="mailto:premkumarmodi001@gmail.com">Hire me</a></td>
+            <td>let's talk</td>
+          </tr>
+        </table>
+      </div>
+      <div class="part2">
+        <div class="circle"><img src="PREM2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ###################### Education section START ########################################################################################################################### -->
+
+
+  <div class="education" id="education">
+    <center>
+      <h3>My Education Journey </h3>
+    </center>
+    <div class="edu-foot">
+      <div class="part12">
+        <div class="mysteps class10" onclick="showdetails1()">
+          <div class="date-of-degree">
+            <i class="fa-regular fa-calendar-days"></i>2019-2020
+          </div>
+          <div class="name-of-degree">Matriculation</div>
+          <p>I have completed my 10th board with CBSE</p>
+        </div>
+        <div class="mysteps JBIE" onclick="showdetails2()">
+          <div class="date-of-degree"><i class="fa-regular fa-calendar-days"></i>2020-2022</div>
+          <div class="name-of-degree">JBIC</div>
+          <p>I have completed my Jharkhand Board Intermediate Examination</p>
+        </div>
+        <div class="mysteps Graduation" onclick="showdetails3()">
+          <div class="date-of-degree"><i class="fa-regular fa-calendar-days"></i>2022-2025</div>
+          <div class="name-of-degree">BCA</div>
+          <p>I am pursuing my Graduation with BCA(Bachelor in Computer Application)</p>
+        </div>
+        <div class="mysteps Post-Graduation" onclick="showdetails4()">
+          <div class="date-of-degree"><i class="fa-regular fa-calendar-days"></i>20XX-20XX</div>
+          <div class="name-of-degree">MCA</div>
+          <p>I will persue it after completing my BCA &nbsp &nbsp(MY FUTURE PLAN)</p>
+        </div>
+      </div>
+      <div class="part22">
+        <div class="details">
+          <h2>
+            <name-of-degree class="degree"> Matriculation
+            </name-of-degree>
+          </h2>
+          <table class="table">
+            <tr>
+              <td id="space">College</td>
+              <td id="college_name">Mithila Academy</td>
+            </tr>
+            <tr>
+              <td id="space" class="SGPA">Percentage</td>
+              <td id="Percentage">78.8%</td>
+            </tr>
+            <tr>
+              <td id="space">Board</td>
+              <td id="board">CBSE</td>
+            </tr>
+            <tr>
+              <td id="space">Stream</td>
+              <td id="stream">Science</td>
+            </tr>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <center>
+      <h3 class="edu-qoute">Education is the key</h2>
+      </center>
+    </div>
+    
+    <!-- ######################### Education section END ######################################################################################################################## -->
+    
+    
+    <!-- ########################## Skill section ################################################################################################################################## -->
+    
+    
+      <div id="particles-js"></div>
+    <div id="Skill">
+      <center>
+      <h1><span>Skills</span></h1>
+    </center>
+
+    <div class="container_skills">
+      <div class="Programming_skills">
+        <h2>Coding Skills</h2>
+        <div class="show_skills">
+          <div class="grid-item item">C</div>
+          <div class="grid-item item2">C++</div>
+          <div class="grid-item item">Java</div>
+          <div class="grid-item item">DBMS</div>
+          <div class="grid-item item">Html</div>
+          <div class="grid-item item">CSS</div>
+          <div class="grid-item item">Js</div>
+          <div class="grid-item item">learning</div>
+        </div>
+      </div>
+      <div class="Personal_skills">
+        <h2>Personal Skills</h2>
+        <div class="personality_skill">
+          <ol class="list">
+            <li>Good communication</li>
+            <li>Teamwork</li>
+            <li>Self motivation and discipline</li>
+            <li>Strong problem solving skills</li>
+            <li>Excellent time management skills</li>
+
+          </ol>
+          <div class="other_skill">
+            <h2>Other Skill</h2>
+            <ul>
+              <h3>i can operate</h3>
+              <li>Github</li>
+              <li>Excalidraw</li>
+              <li>versel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ########################### Skill section END ############################################################################################################################ -->
+
+  <!-- ################################################################### CONTACT section START ############################################################################## -->
+  <div id="Contact">
+    <center>
+      <h1><span>Contact</span></h1>
+    </center>
+    <div class="contact_info">
+      <div class="contact_info_part1">
+
+        <div class="circle"><img src="PREM2.png" alt=""></div>
+        <div class="links">
+          <div class="link"><a href="https://github.com/Premkumar-ji"  target="_blank" rel="no-referrer"><img src="github.png" alt=""></a></div>
+          <div class="link"><a href="https://www.linkedin.com/in/prem-modi-b8291a257/" target="_blank" rel="no-referrer"><img src="linkedin.png"
+                alt=""></a></div>
+          <div class="link"><img src="instagram.png" alt=""  target="_blank" rel="no-referrer"> </div>
+        </div>
+      </div>
+      <div class="contact_info_part2">
+        <h2>You can contact me at:-</h2>
+        <div class="details">
+          <div class=" detail email"><a href="mailto:premkumarmodi001@gmail.com">premkumarmodi001@gmail.com</a></div>
+          <div class="detail phone"> <a href="tel:+919835345663">+91 9835345663</a> </div>
+          <div class="detail address"> <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14620.088998721403!2d86.173177249614!3d23.639374209937344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4215c9cd74cfd%3A0xef63ecf9196b5048!2sChas%2C%20Bokaro%20Steel%20City%2C%20Jharkhand%20827013!5e0!3m2!1sen!2sin!4v1710860403935!5m2!1sen!2sin"
+              width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="/Js-pages/particles.js"></script>
+  <script src="/Js-pages/app.js"></script>
+
+    &copy;All rights are reserved prem kumar modi
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+
+</html>
