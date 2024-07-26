@@ -1,0 +1,306 @@
+/* Font Faces */
+@font-face {
+    font-family: Sofia;
+    src: url(/sofia/Sofia-Regular.otf);
+}
+@font-face {
+    font-family: Arista;
+    src: url(/AristaSans/OpenType-PS/Arista\ Sans.otf);
+}
+
+/* General Styles */
+html,
+body {
+    scroll-behavior: smooth;
+    padding: 1px 1px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    background: #000022;
+    color: white;
+}
+
+/* Header Section */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.header img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.header .name {
+    display: flex;
+    align-items: center;
+}
+
+.header .name h2 {
+    font-family: Sofia;
+    font-size: 1.9rem;
+    color: #ffffff;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Footer Section */
+.footer {
+    height: 650px;
+    display: flex;
+    padding-top: 70px;
+}
+
+.footer .part1 {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.part1 h1 {
+    font-size: 4.5rem;
+    margin: 0;
+    margin-top: 50px;
+    color: rgb(0, 217, 255);
+}
+
+.part1 h2 {
+    font-family: Arista;
+    font-size: 6rem;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(255, 8, 8), rgb(0, 0, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.part1 p {
+    font-size: 2rem;
+    margin: 0;
+    color: #7FFFD4;
+}
+
+/* Education Section */
+.education {
+    width: 100%;
+    height: 100vh;
+    background-color: #030E2C;
+}
+
+.education h3 {
+    padding-top: 80px;
+    font-size: 2.5rem;
+    width: 100vw;
+    height: 2vh;
+}
+
+.part12 {
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mysteps {
+    width: 80%;
+    height: 12vh;
+    padding: 12px 20px;
+    margin: 0;
+    background: #000000;
+    border: 0.2px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to left, transparent 50%, rgb(38, 201, 255) 50%) right;
+    background-size: 200%;
+}
+
+/* Skill Section */
+#Skill {
+    width: 100%;
+    height: 100vh;
+}
+
+#Skill h1 {
+    padding-top: 70px;
+    height: 4.5vh;
+}
+
+.Programming_skills h2 {
+    font-family: Sofia;
+    font-size: 2rem;
+    color: #00F7FF;
+    text-align: center;
+    height: 8vh;
+    margin: 0;
+}
+
+.show_skills {
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 8vh;
+    row-gap: 15vh;
+}
+
+.grid-item {
+    width: 100px;
+    height: 100px;
+    background-color: #cccccc94;
+    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #00ffd9e6;
+    border-radius: 50%;
+    color: #000;
+    font-family: algerian;
+    font-size: 2rem;
+    padding: 4px;
+}
+
+/* Contact Section */
+#Contact {
+    width: 100%;
+    height: 100vh;
+    padding-top: 45px;
+}
+
+.contact_info {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.contact_info_part1 {
+    width: 30%;
+    height: inherit;
+    position: relative;
+}
+
+.contact_info_part1 .circle {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border: 5px solid #00b7ff;
+    border-radius: 50%;
+    width: 20vw;
+    height: 40vh;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgb(0, 153, 255);
+}
+
+.contact_info_part1 .circle img {
+    width: 25vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.contact_info_part2 {
+    width: 60%;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.contact_info_part2 h2 {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 400px;
+    font-size: 50px;
+}
+
+.detail {
+    width: 100%;
+    height: 5rem;
+    font-size: 25px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 24px;
+}
+
+.detail::before {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: -10.1px;
+    width: 20px;
+    height: 20px;
+    background: #00F7FF;
+    border-radius: 50%;
+}
+
+/* Project Section */
+#Projects {
+    width: 100%;
+    height: 100vh;
+}
+
+.project_cards {
+    padding-top: 100px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 8vh;
+    row-gap: 23vh;
+}
+
+.Project {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #00F7FF;
+    border-radius: 10px;
+    position: relative; 
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+}
+
+.Project:hover {
+    transition: .8s ease-in-out;
+    transform: scale(1.15);
+    box-shadow: 0 0 50px #00b7ff;
+    border-radius: 20px;
+}
+
+.Project h4 {
+    position: absolute;
+    top: 115px;
+    height: 40px;
+    text-align: center;
+    width: 301px;
+    font-size: 30px;
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #00F7FF;
+}
+
+.item1 {
+    background-image: url(/Images/Portfolio.png);
+}
+
+.item2{
+    background-image: url(/Images/todo.png);
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hide Div on Scroll</title>
+<style>
+    * {height: 999rem;}
+    #myDiv {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+</style>
+</head>
+<body><div id="scrollingDiv" style="display: none;">
+    This is the div to hide/show while scrolling.
+  </div>
+  
+
+<script>
+  var scrollingDiv = document.getElementById('scrollingDiv');
+var isScrolling;
+
+// Listen for scroll events
+window.addEventListener('scroll', function (event) {
+  // Clear our timeout throughout the scroll
+  window.clearTimeout(isScrolling);
+
+  // Set a timeout to run after scrolling ends
+  isScrolling = setTimeout(function() {
+    // Hide the div when scrolling stops
+    scrollingDiv.style.display = 'none';
+  }, 1000); // Adjust the delay as needed
+}, false);
+
+// Show the div when the user starts scrolling
+window.addEventListener('scroll', function (event) {
+  // Show the div
+  scrollingDiv.style.display = 'block';
+
+  // Clear the timeout if the user starts scrolling again quickly
+  window.clearTimeout(isScrolling);
+}, false);
+
+
+</script>
+
+</body>
+</html>
