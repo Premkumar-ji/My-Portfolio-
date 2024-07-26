@@ -34,122 +34,58 @@ function typeWriterEffect(words, elementId, speed) {
 
   type();
 }
-
 // Usage
 const wordsToAnimate = ["Gamer", "Programmer", "Web Designer"];
 const elementId = "auto-type";
 const typingSpeed = 100; // Adjust the speed (milliseconds per character)
 
 typeWriterEffect(wordsToAnimate, elementId, typingSpeed);
-// function show_nav(){
 
-// const show_links= document.querySelector('.nav')
-// show_links.style.display='block';
-
-// // }
-// if(max-width==)
-// document.getElementById("color").style.background="black";
-// document.getElementById("color").style.height="4000px";
-
-function showdetails1() {
-
-  var firstDivContent = document.querySelector(".class10 .name-of-degree");
-  var universalDivContent = document.querySelector(".degree");
-  universalDivContent.innerHTML = firstDivContent.innerHTML;
-  var percent = document.getElementById("Percentage");
-  percent.innerHTML = "78.8%";
-  var college = document.getElementById("college_name");
-  college.innerHTML = "Mithila Academy Public School";
-  
-  var Board=document.getElementById("board")
-  Board.innerHTML="CBSE";
-
-  var stream=document.getElementById('stream');
-  stream.innerHTML="no stream";
-
-  
-  var change_to_Percentage = document.querySelector(".SGPA");
-  change_to_Percentage.innerHTML="Percentage";
 
 
 
+function showdetails1() {
+  updateEducationDetails("Matriculation", "78.8%", "Mithila Academy Public School", "CBSE", "Science");
 }
-
-
 
 function showdetails2() {
-  var universalDivContent = document.querySelector(".degree");
-  var thirdivcontent = document.querySelector(".JBIE .name-of-degree");
+  updateEducationDetails("JBIE", "83.8%", "Swami Sahajanand College, Chas", "JAC", "Science");
 
-  universalDivContent.innerHTML = thirdivcontent.innerHTML;
-
-  var percent=document.getElementById("Percentage");
-  percent.innerHTML="83.8%";
-
-  var college = document.getElementById("college_name");
-  college.innerHTML = "Swami Sahajanand College, Chas";
-  
-  var Board=document.getElementById("board")
-  Board.innerHTML="JAC";
-
-  
-  var stream=document.getElementById("stream");
-  stream.innerHTML="Science";
-
-  
   var change_to_Percentage = document.querySelector(".SGPA");
-  change_to_Percentage.innerHTML="Percentage";
+  change_to_Percentage.innerHTML = "Percentage";
+}
+
+function showdetails3() {
+  updateEducationDetails("BCA", "In Progress", "Bokaro Steel City College", "JAC", "Science");
+}
+
+function showdetails4() {
+  updateEducationDetails("MCA", "In My Future Plans", "In My Future Plans", "In My Future Plans", "In My Future Plans");
+}
+
+function updateEducationDetails(degree, percentage, college, board, stream) {
+  document.querySelector(".degree").innerHTML = degree;
+  document.getElementById("Percentage").innerHTML = percentage;
+  document.getElementById("college_name").innerHTML = college;
+  document.getElementById("board").innerHTML = board;
+  document.getElementById("stream").innerHTML = stream;
+
+  // Update the label for percentage/SGPA based on the degree
+  var change_to_Percentage = document.querySelector(".SGPA");
+  var change_to_Board = document.querySelector(".board")
+  if (degree == 'Matriculation' || degree == 'JAC') {
+    change_to_Percentage.innerHTML = "Percentage";
+    change_to_Board.innerHTML = "Board";
+  }
+  else {
+    change_to_Percentage.innerHTML = "SGPA";
+    change_to_Board.innerHTML= "College"
+  }
 
 }
 
-function showdetails3(){
-  var universalDivContent = document.querySelector(".degree");
-  var thirdivcontent = document.querySelector(".Graduation .name-of-degree");
-
-  universalDivContent.innerHTML = thirdivcontent.innerHTML;
 
 
-  var percent=document.getElementById("Percentage");
-  percent.innerHTML="In Progress";
-
-  var college = document.getElementById("college_name");
-  college.innerHTML = "Bokaro Steel City College";
-  
-  var Board=document.getElementById("board")
-  Board.innerHTML="JAC";
-
-  
-  var stream=document.getElementById("stream");
-  stream.innerHTML="Science";
-
-  var change_to_SGPA = document.querySelector(".SGPA");
-  change_to_SGPA.innerHTML="SGPA";
-
-}
-function showdetails4(){
-  var universalDivContent = document.querySelector(".degree");
-  var thirdivcontent = document.querySelector(".Post-Graduation .name-of-degree");
-
-  universalDivContent.innerHTML = thirdivcontent.innerHTML;
-
-  var percent=document.getElementById("Percentage");
-  percent.innerHTML="In My Future Plans";
-
-  var college = document.getElementById("college_name");
-  college.innerHTML = "In My Future Plans";
-  
-  var Board=document.getElementById("board")
-  Board.innerHTML="In My Future Plans";
-
-  
-  var stream=document.getElementById("stream");
-  stream.innerHTML="In My Future Plans";
-
-  var change_to_SGPA = document.querySelector(".SGPA");
-  change_to_SGPA.innerHTML="SGPA";
-
-}
-// showdetails();
 
 window.onload = function() {
   var gridItems = document.querySelectorAll(".grid-item");
