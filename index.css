@@ -2,6 +2,7 @@
     font-family: Sofia;
     src: url(/sofia/Sofia-Regular.otf);
 }
+
 @font-face {
     font-family: Arista;
     src: url(/AristaSans/OpenType-PS/Arista\ Sans.otf);
@@ -746,11 +747,9 @@ a {
     padding-top: 60px;
     padding-left: 0px;
 
-    margin-left: 0;
+    margin-left: 60px !important;
     height: 90vh;
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-evenly;
+
     display: grid;
     grid-template-columns: repeat(4, 300px);
     /* Adjust box width as needed */
@@ -770,7 +769,7 @@ a {
     /* background: red; */
     border: 1px solid #00F7FF;
     border-radius: 10px;
-    position: relative; 
+    position: relative;
     background-size: 300px 200px;
     background-repeat: no-repeat;
 }
@@ -798,20 +797,25 @@ a {
     color: black;
 
 }
+
 .item1 {
     background-image: url(./Portfolio.png);
 }
-.item2{
-    background-image: url( ./todo.png);
+
+.item2 {
+    background-image: url(./todo.png);
 }
-.item3{
-    background-image: url( ./weather_app.png);
+
+.item3 {
+    background-image: url(./weather_app.png);
 }
-.item4{
-    background-image: url( ./Calculator.png);
+
+.item4 {
+    background-image: url(./Calculator.png);
 }
-.item5{
-    background-image: url( ./TypingGame.png);
+
+.item5 {
+    background-image: url(./TypingGame.png);
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1135,7 +1139,37 @@ a {
         margin-left: -3vw;
     }
 
+    #Projects{
+        width: 500px !important;
+        height: 2500px !important;
+
+        padding-top: 120px  !important;
+    }
+  
+    .Project {
+        margin-left: 100px;
+        width: 500px !important;
+        height: 400px;
+        background-size: 550px 400px !important;
+    }
+    .Project:hover{
+        scale: 1;
+    }
+    .project_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 500px) !important;
+        /* Adjust box width as needed */
+        grid-template-rows: repeat(2, 300px);
+        /* Adjust box height as needed */
+        gap: 5vh;
+        /* Distance between boxes */
+        row-gap: 15vh;
+
+    } 
+ 
+
     #Contact {
+        margin-top: 200px !important;
         width: 600px;
         height: 2500px;
     }
