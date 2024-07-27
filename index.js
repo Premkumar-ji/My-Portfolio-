@@ -45,11 +45,11 @@ typeWriterEffect(wordsToAnimate, elementId, typingSpeed);
 
 
 function showdetails1() {
-  updateEducationDetails("Matriculation", "78.8%", "Mithila Academy Public School", "CBSE", "Science");
+  updateEducationDetails("Matriculation", "78.8%", "Mithila Academy Public School", "CBSE", "N/A");
 }
 
 function showdetails2() {
-  updateEducationDetails("JBIE", "83.8%", "Swami Sahajanand College, Chas", "JAC", "Science");
+  updateEducationDetails("JAC", "83.8%", "Swami Sahajanand College, Chas", "JAC", "Science");
 
   var change_to_Percentage = document.querySelector(".SGPA");
   change_to_Percentage.innerHTML = "Percentage";
@@ -72,10 +72,13 @@ function updateEducationDetails(degree, percentage, college, board, stream) {
 
   // Update the label for percentage/SGPA based on the degree
   var change_to_Percentage = document.querySelector(".SGPA");
-  var change_to_Board = document.querySelector(".board")
+  var change_to_Board = document.querySelector(".education-center")
   if (degree == 'Matriculation' || degree == 'JAC') {
     change_to_Percentage.innerHTML = "Percentage";
-    change_to_Board.innerHTML = "Board";
+
+  }
+  if(degree == 'Matriculation'){
+        change_to_Board.innerHTML = "School";
   }
   else {
     change_to_Percentage.innerHTML = "SGPA";
